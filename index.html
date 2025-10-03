@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animacion</title>
+    <!-- <link rel="stylesheet" href="css/boxicons.min.css"> -->
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <!--========== CSS ==========-->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="contenedor_menu">
+        <div class="nav__list">
+            <div class="nav__items">
+                <div class="mt-4 flex justify-center">
+                    <ul class="w-[300px]">
+                        <li class="">
+                            <a href="#"
+                                class="nivel h-[37px] border flex justify-center items-center bg-[#3B82F6] text-white"
+                                id="">
+                                <i class='mr-2 bx bx-whiteboard'></i> Inicial en Familia Comunitaria <i
+                                    class='ml-2 bx bx-chevron-right'></i>
+                            </a>
+                            <ul class="overflow-hidden transition-all duration-300 opacity-0 max-h-0">
+                                <li class="transition-all duration-300 translate-y-2 opacity-0">
+                                    <a href="#"
+                                        class="nivel bg-[#97959B] flex h-[37px] text-white justify-center items-center">PRE
+                                        KINDER</a>
+                                    <ul class="transition-all duration-500 opacity-0 max-h-0 overflow-hidden">
+                                        <li><a href="#"
+                                                class="border border-black h-[35px] flex mt-[2px] justify-center items-center">1a
+                                                Seccion - "A"</a></li>
+                                        <li><a href="#"
+                                                class="border border-black h-[35px] flex mt-[2px] justify-center items-center">1a
+                                                Seccion - "B"</a></li>
+                                        <li><a href="#"
+                                                class="border border-black h-[35px] flex mt-[2px] justify-center items-center">1a
+                                                Seccion - "C"</a></li>
+                                    </ul>
+                                </li>
+                                <li class="transition-all duration-300 translate-y-2 opacity-0">
+                                    <a href="#"
+                                        class="nivel bg-[#97959B] flex h-[37px] text-white justify-center items-center mt-[1px]">KINDER</a>
+                                    <ul class="max-h-0 overflow-hidden trasition-all duration-500 opacity-0">
+                                        <li><a href="#"
+                                                class="border border-black h-[35px] flex mt-[2px] justify-center items-center">2a
+                                                Seccion - "A"</a></li>
+                                        <li><a href="#"
+                                                class="border border-black h-[35px] flex mt-[2px] justify-center items-center">2a
+                                                Seccion - "B"</a></li>
+                                        <li><a href="#"
+                                                class="border border-black h-[35px] flex mt-[2px] justify-center items-center">2a
+                                                Seccion - "C"</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#"
+                                class="nivel h-[37px] border flex justify-center items-center bg-[#3B82F6] text-white">Primaria
+                                Comunitaria Vocacional</a>
+                            <ul class="overflow-hidden transition-all duration-300 opacity-0 max-h-0">
+                                <li class="transition-all duration-300 translate-y-2 opacity-0">
+                                    <a href="#"
+                                        class="nivel bg-[#97959B] flex h-[37px] text-white justify-center items-center">PRIMERO</a>
+                                    <ul class="max-h-0 overflow-hidden trasition-all duration-500 opacity-0">
+                                        <li><a href="#"
+                                                class="border border-black h-[35px] flex mt-[2px] justify-center items-center">1o
+                                                de Primaria - "A"</a></li>
+                                        <li><a href="#"
+                                                class="border border-black h-[35px] flex mt-[2px] justify-center items-center">1o
+                                                de Primaria - "B"</a></li>
+                                        <li><a href="#"
+                                                class="border border-black h-[35px] flex mt-[2px] justify-center items-center">1o
+                                                de Primaria - "C"</a></li>
+
+                                    </ul>
+                                </li>
+                                <li class="transition-all duration-300 translate-y-2 opacity-0">
+                                    <a href="#"
+                                        class="bg-[#97959B] flex h-[37px] text-white justify-center items-center mt-[1px]">SEGUNDO</a>
+                                </li>
+                                <li class="transition-all duration-300 translate-y-2 opacity-0">
+                                    <a href="#"
+                                        class="bg-[#97959B] flex h-[37px] text-white justify-center items-center mt-[1px]">TERCERO</a>
+                                </li>
+                                <li class="transition-all duration-300 translate-y-2 opacity-0">
+                                    <a href="#"
+                                        class="bg-[#97959B] flex h-[37px] text-white justify-center items-center mt-[1px]">CUARTO</a>
+                                </li>
+                                <li class="transition-all duration-300 translate-y-2 opacity-0">
+                                    <a href="#"
+                                        class="bg-[#97959B] flex h-[37px] text-white justify-center items-center mt-[1px]">QUINTO</a>
+                                </li>
+                                <li class="transition-all duration-300 translate-y-2 opacity-0">
+                                    <a href="#"
+                                        class="bg-[#97959B] flex h-[37px] text-white justify-center items-center mt-[1px]">SEXTO</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#" id="nivel"
+                                class="h-[37px] border flex justify-center items-center bg-[#3B82F6] text-white">Secundaria
+                                Comunitaria Productiva</a>
+                            <ul>
+                                <li></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    document.querySelectorAll(".nivel").forEach(function (nivelBtn) {
+        nivelBtn.addEventListener("click", function (e) {
+            e.preventDefault();
+            var submenu = this.parentElement.querySelector("ul");
+            if (submenu.classList.contains("max-h-0")) {//no esta abierto
+                console.log(this.parentElement.parentElement.children);
+                Array.from(this.parentElement.parentElement.children).forEach((li, j) => {
+                    console.log(li.children[1])
+                    li.children[1].classList.remove("max-h-[500px]", "opacity-100");
+                    li.children[1].classList.add("max-h-[0px]", "opacity-0");
+
+                });
+                submenu.classList.remove("max-h-0", "opacity-0");
+                submenu.classList.add("max-h-[500px]", "opacity-100");
+                Array.from(submenu.children).forEach((li, i) => {
+                    setTimeout(() => {
+                        li.classList.remove("opacity-0", "translate-y-2");
+                        li.classList.add("opacity-100", "translate-y-0");
+                    }, 80 * i);
+                });
+            } else {
+                submenu.classList.remove("max-h-[500px]", "opacity-100");
+                submenu.classList.add("max-h-0", "opacity-0");
+                Array.from(submenu.children).forEach((li, i) => {
+                    setTimeout(() => {
+                        li.classList.remove("opacity-100", "translate-y-0");
+                        li.classList.add("opacity-0", "translate-y-2");
+                    }, 80 * i);
+                });
+            }
+        });
+    });
+
+</script>
+
+</html>
